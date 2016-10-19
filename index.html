@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div>
+  First Number <input type="number" id="first_number" name="text1"> &nbsp;&nbsp;&nbsp;
+  Second Number <input type="number" id="second_number" name="text2"> &nbsp;&nbsp;&nbsp;
+  <button type="button" onclick="myFunction()">+</button>
+  <br><br><br><br>
+  The sum <input type="number" id="demo">
+</div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("first_number").value;
+    var y = document.getElementById("second_number").value;
+    var z = parseFloat(x) + parseFloat(y);
+    document.getElementById("demo").value = z;
+  }
+</script>
+</body>
+</html>
